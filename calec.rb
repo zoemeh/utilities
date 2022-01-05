@@ -46,7 +46,7 @@ when :violet
 when :red
   colour = 31
 end
-puts "\x1b[1;32m#{catholic_day.celebrations.first.title}\x1b[0m"
+puts "\x1b[1;#{colour}m#{catholic_day.celebrations.first.title}\x1b[0m"
 puts "Primera Lectura:\t" + lecturas[i]
 puts "Salmo:\t\t\t" +  lecturas[i+1]
 if (lecturas.size >= 5)
